@@ -21,8 +21,8 @@ export class TableComponent  implements OnInit{
   }
 
 
-  editarPost(Id: any){
-    this.router.navigate(['editar', Id]);
+  editarPost(id: any){
+    this.router.navigate(['editar', id]);
   }
 
   nuevoPost(){

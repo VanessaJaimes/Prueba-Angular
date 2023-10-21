@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'table', pathMatch: 'full' },
   { path: 'table', component: TableComponent },
   { path:'nuevo', component:NuevoComponent },
-  { path:'editar', component:EditarComponent }
+  { path:'editar/:id', component:EditarComponent }
 
 
 ];

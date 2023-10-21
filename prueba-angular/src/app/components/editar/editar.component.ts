@@ -14,6 +14,12 @@ export class EditarComponent {
 
   constructor(private activerouter: ActivatedRoute, private router: Router, private api: ApiService) { }
 
+  ngOnInit(): void{
+    let postid = this.activerouter.snapshot.queryParamMap.get('id');
+    
+    console.log(postid);
+
+  }
   datosPost!: PostI;
   editarForm = new FormGroup({
     title: new FormControl(''),
